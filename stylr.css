@@ -1,0 +1,82 @@
+:root {
+  --vietnam: "Be Vietnam Pro", sans-serif;
+
+  --white-95: #f1f1f3;
+  --white-97: #f7f7f8;
+  --orange-50: #ff9500;
+
+  --grey-35: #59595a;
+  --grey-40: #656567;
+}
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: var(--vietnam);
+  position: relative;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  /* max-width: 1400px; */
+  /* 
+  @media (min-width: 720px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 950px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1200px;
+  }
+
+  @media (min-width: 1536px) {
+    max-width: 1400px;
+  } */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+[aria-current] {
+  background: var(--white-95);
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+.burger {
+  z-index: 11;
+}
+.burger span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+nav.active {
+  left: 0;
+}

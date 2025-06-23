@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylr.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <script
+            src="https://cdn.tailwindcss.com"></script>
+        <title>Tailwind first test</title>
+
+    </head>
+    <body class="font-normal text-black text-base/6 bg-[var(--white-97)]">
+        <div id="page" class="flex flex-col min-h-full">
+            <header
+                class="container p-5 mx-auto w-full">
+                <div
+                    class="bg-[var(--orange-50)] text-white text-center py-[10px] px-4 text-sm rounded-md ">Free
+                    Courses 🌟 Sale
+                    Ends Soon,
+                    Get It Now &rarr;</div>
+                <div
+                    class="flex items-center text-base w-full py-[16.5px] px-0 lg:px-16 border-b border-[var(--white-95)]">
+                    <a href="/">
+                        <img src="./assets/Logo.svg"
+                            alt="Logo my awesome webiste with tailwind"></a>
+                    <nav id="menu"
+                        class="fixed ease-linear duration-300 -left-full bg-[var(--orange-50)] top-0 bottom-0 right-0 ml-0 w-10/12 p-10 h-full z-10 flex lg:static lg:ml-16 mr-auto lg:duration-0 lg:w-auto lg:bg-transparent lg:p-0">
+                        <ul
+                            class="flex flex-col w-full gap-6 text-sm lg:flex-row">
+                            <li>
+                                <a href="/"
+                                    class aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Courses">Courses</a>
+                            </li>
+                            <li>
+                                <a href="#AboutUs">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#Home">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#Home">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="buttons ml-auto lg:ml-0">
+                        <ul class=" flex gap-x-[30px] items-center text-sm">
+                            <li>
+                                <a href="#SignUp">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="#Login"
+                                    class="bg-[var(--orange-50)] py-3 px-6 rounded-md text-white">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Burger Button -->
+                    <button id="burger"
+                        class="burger lg:hidden flex flex-col justify-center items-center space-y-1 ml-6">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+            </header>
+            <main class="flex-[1_1_100%]">
+                <h1>sdfsdf</h1>
+            </main>
+            <footer class="bg-white   pt-16 pb-8">
+                <div
+                    class="container flex flex-wrap px-5 gap-6 lg:gap-0  pb-7 footer__top">
+                    <div
+                        class="max-w-full flex-[1_1_100%] lg:max-w-[calc(100%/3)] ">
+                        <a href="/" class="mb-4 flex">
+                            <img src="./assets/Logo.svg"
+                                alt="Logo my awesome webiste  with tailwind">
+                        </a>
+                        <ul
+                            class="text-sm md:text-base contcts-footer flex flex-col gap-3">
+                            <li>
+                                <a
+                                    class="before:w-5 before:h-5 before:bg-[url(./assets/icons/mail.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
+                                    href="hello@tailwindTest.com">hello@tailwindTest.com</a></li>
+                            <li>
+                                <a
+                                    class="before:w-5 before:h-5 before:bg-[url(./assets/icons/phone.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
+                                    href="+42744743737">+42 744 743 737</a></li>
+                            <li>
+                                <a
+                                    class="before:w-5 before:h-5 before:bg-[url(./assets/icons/pin.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
+                                    href="#SomewhereintheWorld">Somewhere in the
+                                    World</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="max-w-full flex-[1_1_100%] flex flex-wrap gap-6 lg:max-w-[calc(100%*2/3)] lg:flex-nowrap">
+                        <div
+                            class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)] ">
+                            <h6 class="text-lg font-semibold mb-2">Home</h6>
+                            <ul
+                                class="text-sm md:text-base flex flex-col gap-2">
+                                <li><a class="text-[var(--grey-35)]"
+                                        href="#Benefits">Benefits</a></li>
+                                <li><a class="text-[var(--grey-35)]"
+                                        href="#OurCourses">Our Courses</a></li>
+                                <li><a class="text-[var(--grey-35)]"
+                                        href="#OurTestimonials">Our
+                                        Testimonials</a></li>
+                                <li><a class="text-[var(--grey-35)]"
+                                        href="#OurFAQ">Our FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)]">
+                            <h6 class="text-lg font-semibold mb-2">About Us</h6>
+                            <ul
+                                class="text-sm md:text-base flex flex-col gap-2">
+                                <li><a class="text-[var(--grey-35)]"
+                                        href="#Company">Company</a></li>
+                                <li><a
+                                        class="text-[var(--grey-35)]"
+                                        href="#Achievements">Achievements</a></li>
+                                <li><a class="text-[var(--grey-35)]"
+                                        href="#OurGoals">Our Goals</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)]">
+                            <h6 class="text-lg font-semibold mb-2">Social
+                                Profiles</h6>
+                            <ul>
+                                Social Profiles
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="container px-5 footer__bottom ">
+                    <p
+                        class="text-lg text-center text-[var(--grey-40)] pt-7 border-t border-[var(--white-95)]">
+                        © 2023
+                        Skillbridge. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="src/script.js"></script>
+    </body>
+</html>
