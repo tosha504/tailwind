@@ -1,658 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./stylr.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <title>Tailwind first test</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind first test</title>
 
-    </head>
+</head>
 
-    <body
-        class="font-normal text-[var(--grey-15)] text-base leading-normal bg-[var(--white-97)]">
-        <div id="page" class="flex flex-col min-h-full">
-            <!-- header start -->
-            <header class="container p-4 mx-auto w-full">
-                <div
-                    class="bg-[var(--orange-50)] text-white text-center py-[10px] px-4 text-sm rounded-md ">Free
-                    Courses 🌟 Sale
-                    Ends Soon,
-                    Get It Now &rarr;</div>
-                <div
-                    class="flex items-center text-base w-full py-[16.5px] px-0 lg:px-16 border-b border-[var(--white-95)]">
-                    <a href="/">
-                        <img src="./assets/Logo.svg"
-                            alt="Logo my awesome webiste with tailwind"></a>
-                    <nav id="menu"
-                        class="fixed ease-linear duration-300 -left-full bg-[var(--orange-50)] top-0 bottom-0 right-0 ml-0 w-10/12 p-10 h-full z-10 flex lg:static lg:ml-16 mr-auto lg:duration-0 lg:w-auto lg:bg-transparent lg:p-0">
-                        <ul
-                            class="flex flex-col w-full gap-6 text-sm lg:flex-row">
-                            <li>
-                                <a href="/" class aria-current="page">Home</a>
-                            </li>
-                            <li>
-                                <a href="#Courses">Courses</a>
-                            </li>
-                            <li>
-                                <a href="#AboutUs">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#Home">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#Home">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="buttons ml-auto lg:ml-0">
-                        <ul class=" flex gap-x-[30px] items-center text-sm">
-                            <li>
-                                <a href="#SignUp">Sign Up</a>
-                            </li>
-                            <li>
-                                <a href="#Login"
-                                    class="bg-[var(--orange-50)] py-3 px-6 rounded-md text-white">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Burger Button -->
-                    <button id="burger"
-                        class="burger lg:hidden flex flex-col justify-center items-center space-y-1 ml-6">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-
+<body class="font-normal text-[var(--grey-15)] text-base leading-normal bg-[var(--white-97)]">
+    <div id="page" class="flex flex-col min-h-full">
+        <!-- header start -->
+        <header class="container p-4 mx-auto w-full">
+            <div class="bg-[var(--orange-50)]  text-white text-center py-[10px] px-4 text-sm rounded-md ">Free
+                Courses 🌟 Sale
+                Ends Soon,
+                Get It Now &rarr;</div>
+            <div class="flex items-center text-base w-full py-[16.5px] px-0 lg:px-16 border-b border-[var(--white-95)]">
+                <a href="/">
+                    <img src="./assets/Logo.svg" alt="Logo my awesome webiste with tailwind"></a>
+                <nav id="menu"
+                    class="fixed ease-linear duration-300 -left-full bg-[var(--orange-50)]  top-0 bottom-0 right-0 ml-0 w-10/12 p-10 h-full z-10 flex lg:static lg:ml-16 mr-auto lg:duration-0 lg:w-auto lg:bg-transparent lg:p-0">
+                    <ul class="flex flex-col w-full gap-6 text-sm lg:flex-row">
+                        <li>
+                            <a href="/" class aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Courses">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#AboutUs">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#Home">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#Home">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="buttons ml-auto lg:ml-0">
+                    <ul class=" flex gap-x-[30px] items-center text-sm">
+                        <li>
+                            <a href="#SignUp">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="#Login"
+                                class="ease-linear duration-300 bg-[var(--orange-50)] hover:bg-[var(--orange-70)] py-3 px-6 rounded-md text-white">Login</a>
+                        </li>
+                    </ul>
                 </div>
-            </header>
-            <!-- header end -->
-            <main class="flex-[1_1_100%]">
-                <!-- hero-section start -->
-                <section id="hero">
-                    <div
-                        class="container m-auto px-4 pt-[50px]  pb-[15px] lg:pt-[100px] lg:pb-[50px]">
-                        <div
-                            class="bg-[var(--white-99)] max-w-max flex items-center mx-auto gap-2.5 p-3 rounded-lg border border-[var(--white-95)] mb-4 relative before:bg-[url(./assets/hero/AbstractLine.svg)] before:w-[39px] before:h-[43px] before:flex before:absolute before:-left-4 before:bg-no-repeat before:bg-size-auto before:bg-center before:-top-4">
-                            <img src="./assets/hero/IconContainer.png"
-                                alt="IconContainer" loading="lazy">
-                            <h1
-                                class="text-base lg:text-4xl font-semibold"><span
-                                    class="text-[var(--orange-50)]">Unlock</span>
-                                Your Creative Potential</h1>
-                        </div>
-                        <p
-                            class="text-center text-2xl font-medium mb-2.5 lg:text-[28px]">with
-                            Online
-                            Design and
-                            Development
-                            Courses.</p>
-                        <p class="text-center">Learn from Industry Experts and
-                            Enhance Your Skills.</p>
-                        <div
-                            class="mt-12 mx-auto flex gap-3 items-center justify-center max-w-max flex-wrap">
-                            <a href="#Explore"
-                                class="rounded-md text-sm py-3.5 px-5 bg-[var(--orange-50)] font-semibold border text-white">Explore
-                                Courses</a>
-                            <a href="#View"
-                                class="rounded-md text-sm py-3.5 px-5 bg-white border font-semibold border-[var(--white-95)] ">View
-                                Pricing</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- hero-section end -->
+                <!-- Burger Button -->
+                <button id="burger" class="burger lg:hidden flex flex-col justify-center items-center space-y-1 ml-6">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-                <!-- partners start -->
-                <section id="partners">
+            </div>
+        </header>
+        <!-- header end -->
+        <main class="flex-[1_1_100%]">
+            <!-- hero-section start -->
+            <section id="hero">
+                <div class="container m-auto px-4 pt-[50px]  pb-[15px] lg:pt-[100px] lg:pb-[50px]">
                     <div
-                        class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
-                        <div
-                            class="swiper flex gap-4 p-2.5 lg:p-6 bg-white rounded-lg border border-[var(--white-95)]">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_1.png"
-                                        alt="Partner name STROPIFY"
-                                        loading="lazy"></div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_2.png"
-                                        alt="Partner name DRAMAVU"
-                                        loading="lazy"></div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_3.png"
-                                        alt="Partner name HIKEMAX"
-                                        loading="lazy"></div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_4.png"
-                                        alt="Partner name PIXTHOR"
-                                        loading="lazy"></div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_5.png"
-                                        alt="Partner name FLIXORA"
-                                        loading="lazy"></div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_6.png"
-                                        alt="Partner name MOVZONE"
-                                        loading="lazy"></div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_7.png"
-                                        alt="Partner name STRAMU">
-                                </div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_8.png"
-                                        alt="Partner name BINGTRA"
-                                        loading="lazy"></div>
-                                <div class="swiper-slide"><img
-                                        src="./assets/partners/logo_9.png"
-                                        alt="Partner name VIBLEX"
-                                        loading="lazy"></div>
+                        class="bg-[var(--white-99)] max-w-max flex items-center mx-auto gap-2.5 p-3 rounded-lg border border-[var(--white-95)] mb-4 relative before:bg-[url(./assets/hero/AbstractLine.svg)] before:w-[39px] before:h-[43px] before:flex before:absolute before:-left-4 before:bg-no-repeat before:bg-size-auto before:bg-center before:-top-4">
+                        <img src="./assets/hero/IconContainer.png" alt="IconContainer" loading="lazy">
+                        <h1 class="text-base lg:text-4xl font-semibold"><span
+                                class="text-[var(--orange-50)]">Unlock</span>
+                            Your Creative Potential</h1>
+                    </div>
+                    <p class="text-center text-2xl font-medium mb-2.5 lg:text-[28px]">with
+                        Online
+                        Design and
+                        Development
+                        Courses.</p>
+                    <p class="text-center">Learn from Industry Experts and
+                        Enhance Your Skills.</p>
+                    <div class="mt-12 mx-auto flex gap-3 items-center justify-center max-w-max flex-wrap">
+                        <a href="#Explore"
+                            class="rounded-md text-sm py-3.5 px-5 duration-300 bg-[var(--orange-50)] hover:bg-[var(--orange-70)] font-semibold border text-white">Explore
+                            Courses</a>
+                        <a href="#View"
+                            class="rounded-md text-sm py-3.5 px-5 bg-white border font-semibold border-[var(--white-95)] ">View
+                            Pricing</a>
+                    </div>
+                </div>
+            </section>
+            <!-- hero-section end -->
+
+            <!-- partners start -->
+            <section id="partners">
+                <div class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
+                    <div class="swiper flex gap-4 p-2.5 lg:p-6 bg-white rounded-lg border border-[var(--white-95)]">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./assets/partners/logo_1.png"
+                                    alt="Partner name STROPIFY" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_2.png" alt="Partner name DRAMAVU"
+                                    loading="lazy"></div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_3.png" alt="Partner name HIKEMAX"
+                                    loading="lazy"></div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_4.png" alt="Partner name PIXTHOR"
+                                    loading="lazy"></div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_5.png" alt="Partner name FLIXORA"
+                                    loading="lazy"></div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_6.png" alt="Partner name MOVZONE"
+                                    loading="lazy"></div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_7.png" alt="Partner name STRAMU">
                             </div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_8.png" alt="Partner name BINGTRA"
+                                    loading="lazy"></div>
+                            <div class="swiper-slide"><img src="./assets/partners/logo_9.png" alt="Partner name VIBLEX"
+                                    loading="lazy"></div>
                         </div>
                     </div>
-                </section>
-                <!-- partners end -->
-
-                <!-- video start -->
-                <section id="video">
-                    <div
-                        class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
-                        <div
-                            class="video rounded-xl overflow-hidden flex relative before:absolute before:w-[100%] before:bg-[#00000020] before:h-[100%]">
-                            <img src="./assets/video/video.png"
-                                class=" 2xl:w-[100%]"
-                                alt="Video place holder maybe"
-                                loading="lazy">
-                        </div>
-                    </div>
-                </section>
-                <!-- video end -->
-
-                <!-- benefits start -->
-                <section id="benefits">
-                    <div
-                        class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
-                        <h2
-                            class="text-[28px] font-semibold leading-[1.5] md:text-[38px]">Benefits</h2>
-                        <div class="flex flex-wrap gap-5 mb-[60px]">
-                            <p class="text-[var(--grey-35)] max-w-[933px]">Lorem
-                                ipsum dolor
-                                sit amet consectetur. Tempus
-                                tincidunt etiam eget elit id imperdiet et. Cras
-                                eu sit dignissim lorem nibh et. Ac cum eget
-                                habitasse in velit fringilla feugiat senectus
-                                in.</p>
-                            <a href="#viewAll"
-                                class="rounded-md text-sm py-3.5 px-5 bg-white border font-medium border-[var(--white-95)] xl:ml-auto">View
-                                All</a>
-                        </div>
-                        <ul class="flex flex-wrap gap-[20px]">
-                            <li
-                                class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
-                                <div class="flex-[1_1_100%]">
-                                    <p
-                                        class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">01</p>
-                                    <p
-                                        class="text-[20px] font-semibold mb-2">Flexible
-                                        Learning Schedule</p>
-                                    <p
-                                        class="mb-8 lg:mb-10 text-[var(--grey-30)]">Fit
-                                        your coursework
-                                        around your existing
-                                        commitments and obligations.</p>
-                                </div>
-                                <span
-                                    class="
-                                        max-w-[100%]
-                                        w-[54px] flex h-[54px]
-                                        bg-[var(--white-97)] border
-                                        border-[var(--white-95)] rounded-md
-                                        ml-auto justify-center min-h-[54px]"><img
-                                        class="max-w-[13px]"
-                                        src="./assets/arrows/arrow.svg"
-                                        alt="Arrow"></span>
-                            </li>
-                            <li
-                                class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
-                                <div class="flex-[1_1_100%]">
-                                    <p
-                                        class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">02</p>
-                                    <p
-                                        class="text-[20px] font-semibold mb-2">Expert
-                                        Instruction</p>
-                                    <p
-                                        class="mb-8 lg:mb-10 text-[var(--grey-30)]">Learn
-                                        from industry experts who have hands-on
-                                        experience in design and
-                                        development.</p>
-                                </div>
-                                <span
-                                    class="
-                                        max-w-[100%]
-                                        w-[54px] flex h-[54px]
-                                        bg-[var(--white-97)] border
-                                        border-[var(--white-95)] rounded-md
-                                        ml-auto justify-center min-h-[54px]"><img
-                                        class="max-w-[13px]"
-                                        src="./assets/arrows/arrow.svg"
-                                        alt="Arrow"></span>
-                            </li>
-                            <li
-                                class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
-                                <div class="flex-[1_1_100%]">
-                                    <p
-                                        class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">03</p>
-                                    <p
-                                        class="text-[20px] font-semibold mb-2">Diverse
-                                        Course Offerings</p>
-                                    <p
-                                        class="mb-8 lg:mb-10 text-[var(--grey-30)]">Explore
-                                        a wide range of design and development
-                                        courses covering various topics.</p>
-                                </div>
-                                <span
-                                    class="
-                                        max-w-[100%]
-                                        w-[54px] flex h-[54px]
-                                        bg-[var(--white-97)] border
-                                        border-[var(--white-95)] rounded-md
-                                        ml-auto justify-center min-h-[54px]"><img
-                                        class="max-w-[13px]"
-                                        src="./assets/arrows/arrow.svg"
-                                        alt="Arrow"></span>
-                            </li>
-                            <li
-                                class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
-                                <div class="flex-[1_1_100%]">
-                                    <p
-                                        class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">04</p>
-                                    <p
-                                        class="text-[20px] font-semibold mb-2">Updated
-                                        Curriculum</p>
-                                    <p
-                                        class="mb-8 lg:mb-10 text-[var(--grey-30)]">Access
-                                        courses with up-to-date content
-                                        reflecting
-                                        the latest trends and industry
-                                        practices.</p>
-                                </div>
-                                <span class="
-                                        max-w-[100%]
-                                        w-[54px] flex h-[54px]
-                                        bg-[var(--white-97)] border
-                                        border-[var(--white-95)] rounded-md
-                                        ml-auto justify-center min-h-[54px]"><img
-                                        class="max-w-[13px]"
-                                        src="./assets/arrows/arrow.svg"
-                                        alt="Arrow"></span>
-                            </li>
-                            <li
-                                class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
-                                <div class="flex-[1_1_100%]">
-
-                                    <p
-                                        class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">05</p>
-                                    <p
-                                        class="text-[20px] font-semibold mb-2">Practical
-                                        Projects and Assignments</p>
-                                    <p
-                                        class="mb-8 lg:mb-10 text-[var(--grey-30)]">Develop
-                                        a portfolio showcasing your skills
-                                        and
-                                        abilities to potential
-                                        employers.</p>
-                                </div>
-                                <span
-                                    class="
-                                        max-w-[100%]
-                                        w-[54px] flex h-[54px]
-                                        bg-[var(--white-97)] border
-                                        border-[var(--white-95)] rounded-md
-                                        ml-auto justify-center min-h-[54px]"><img
-                                        class="max-w-[13px]"
-                                        src="./assets/arrows/arrow.svg"
-                                        alt="Arrow"></span>
-                            </li>
-                            <li
-                                class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
-                                <div class="flex-[1_1_100%]">
-                                    <p
-                                        class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">06</p>
-                                    <p
-                                        class="text-[20px] font-semibold mb-2">Interactive
-                                        Learning Environment</p>
-                                    <p
-                                        class="mb-8 lg:mb-10 text-[var(--grey-30)]">Collaborate
-                                        with fellow learners, exchanging
-                                        ideas
-                                        and
-                                        feedback to enhance your
-                                        understanding.</p>
-                                </div>
-                                <span class="
-                                        max-w-[100%]
-                                        w-[54px] flex h-[54px]
-                                        bg-[var(--white-97)] border
-                                        border-[var(--white-95)] rounded-md
-                                        ml-auto justify-center min-h-[54px]"><img
-                                        class="max-w-[13px]"
-                                        src="./assets/arrows/arrow.svg"
-                                        alt="Arrow"></span>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- benefits end -->
-
-                <!-- courses start -->
-                <section id="courses">
-                    <div
-                        class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
-                        <h2
-                            class="text-[28px] font-semibold leading-[1.5] md:text-[38px]">Our
-                            Courses</h2>
-                        <div class="flex flex-wrap gap-5 mb-[60px]">
-                            <p class="text-[var(--grey-35)] max-w-[933px]">Lorem
-                                ipsum dolor sit amet consectetur. Tempus
-                                tincidunt etiam eget elit id imperdiet et. Cras
-                                eu sit dignissim lorem nibh et. Ac cum eget
-                                habitasse in velit fringilla feugiat senectus
-                                in.</p>
-                            <a href="#viewAll"
-                                class="rounded-md text-sm py-3.5 px-5 bg-white border font-medium border-[var(--white-95)] xl:ml-auto">View
-                                All</a>
-                        </div>
-                        <ul class="flex flex-wrap gap-[20px]">
-                            <li
-                                class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
-                                <a href="#" class="pb-6 md:pb-7 flex"><img
-                                        src="./assets/courses/ByJohnSmith.png"
-                                        alt="By John Smith"></a><div
-                                    class="course-contnet flex flex-col gap-[24px]"><div
-                                        class="flex gap-4 flex-wrap items-center"><ul
-                                            class="flex gap-3">
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">4
-                                                    weeks</a></li>
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Beginner</a></li>
-                                        </ul>
-                                        <a href="#" class="ml-auto">By John
-                                            Smith</a></div>
-                                    <div>
-                                        <p
-                                            class="mb-[24px] text-base font-semibold">Web
-                                            Design Fundamentals</p><p
-                                            class="font-light text-[14px] text-[var(--grey-30)]">Learn
-                                            the
-                                            fundamentals of web design,
-                                            including HTML, CSS, and responsive
-                                            design principles. Develop the
-                                            skills to create visually appealing
-                                            and user-friendly
-                                            websites.</p></div><a href="#"
-                                        class="rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
-                                        it Now</a></div></li>
-                            <li
-                                class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
-                                <a href="#" class="pb-6 md:pb-7 flex"><img
-                                        src="./assets/courses/ByEmilyJohnson.png"
-                                        alt="By Emily Johnson"></a><div
-                                    class="course-contnet flex flex-col gap-[24px]"><div
-                                        class="flex gap-4 flex-wrap items-center"><ul
-                                            class="flex gap-3">
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">6
-                                                    weeks</a></li>
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Intermediate</a></li>
-                                        </ul>
-                                        <a href="#" class="ml-auto">By Emily
-                                            Johnson</a></div>
-                                    <div>
-                                        <p
-                                            class="mb-[24px] text-base font-semibold">UI/UX
-                                            Design</p><p
-                                            class="font-light text-[14px] text-[var(--grey-30)]">Master
-                                            the art of creating intuitive user
-                                            interfaces (UI) and enhancing user
-                                            experiences (UX). Learn design
-                                            principles, wireframing,
-                                            prototyping, and usability testing
-                                            techniques.</p></div><a href="#"
-                                        class="rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
-                                        it Now</a></div></li>
-                            <li
-                                class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
-                                <a href="#" class="pb-6 md:pb-7 flex"><img
-                                        src="./assets/courses/ByDavidBrown.png"
-                                        alt="By David Brown"></a><div
-                                    class="course-contnet flex flex-col gap-[24px]"><div
-                                        class="flex gap-4 flex-wrap items-center"><ul
-                                            class="flex gap-3">
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">8
-                                                    weeks</a></li>
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Intermediate</a></li>
-                                        </ul>
-                                        <a href="#" class="ml-auto">By David
-                                            Brown</a></div>
-                                    <div>
-                                        <p
-                                            class="mb-[24px] text-base font-semibold">Mobile
-                                            App Development</p><p
-                                            class="font-light text-[14px] text-[var(--grey-30)]">Dive
-                                            into the world of mobile app
-                                            development. Learn to build native
-                                            iOS and Android applications using
-                                            industry-leading frameworks like
-                                            Swift and Kotlin.</p></div><a
-                                        href="#"
-                                        class="rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
-                                        it Now</a></div></li>
-                            <li
-                                class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
-                                <a href="#" class="pb-6 md:pb-7 flex"><img
-                                        src="./assets/courses/BySarahThompson.png"
-                                        alt="By Sarah Thompson"></a><div
-                                    class="course-contnet flex flex-col gap-[24px]"><div
-                                        class="flex gap-4 flex-wrap items-center"><ul
-                                            class="flex gap-3">
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">10
-                                                    weeks</a></li>
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Beginner</a></li>
-                                        </ul>
-                                        <a href="#" class="ml-auto">By Sarah
-                                            Thompson</a></div>
-                                    <div>
-                                        <p
-                                            class="mb-[24px] text-base font-semibold">Graphic
-                                            Design for Beginners</p><p
-                                            class="font-light text-[14px] text-[var(--grey-30)]">Discover
-                                            the fundamentals of graphic design,
-                                            including typography, color theory,
-                                            layout design, and image
-                                            manipulation techniques. Create
-                                            visually stunning designs for print
-                                            and digital media.</p></div><a
-                                        href="#"
-                                        class="rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
-                                        it Now</a></div></li>
-                            <li
-                                class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
-                                <a href="#" class="pb-6 md:pb-7 flex"><img
-                                        src="./assets/courses/ByMichaelAdams.png"
-                                        alt="By Michael Adams"></a><div
-                                    class="course-contnet flex flex-col gap-[24px]"><div
-                                        class="flex gap-4 flex-wrap items-center"><ul
-                                            class="flex gap-3">
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">6
-                                                    weeks</a></li>
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">cat
-                                                    2</a></li>
-                                        </ul>
-                                        <a href="#" class="ml-auto">by
-                                            Author</a></div>
-                                    <div>
-                                        <p
-                                            class="mb-[24px] text-base font-semibold">Web
-                                            Design Fundamentals</p><p
-                                            class="font-light text-[14px] text-[var(--grey-30)]">Learn
-                                            the
-                                            fundamentals of web design,
-                                            including HTML, CSS, and responsive
-                                            design principles. Develop the
-                                            skills to create visually appealing
-                                            and user-friendly
-                                            websites.</p></div><a href="#"
-                                        class="rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
-                                        it Now</a></div></li>
-                            <li
-                                class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
-                                <a href="#" class="pb-6 md:pb-7 flex"><img
-                                        src="./assets/courses/ByJenniferWilson.png"
-                                        alt="By Jennifer Wilson"></a><div
-                                    class="course-contnet flex flex-col gap-[24px]"><div
-                                        class="flex gap-4 flex-wrap items-center"><ul
-                                            class="flex gap-3">
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">6
-                                                    weeks</a></li>
-                                            <li><a href="#"
-                                                    class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Advance</a></li>
-                                        </ul>
-                                        <a href="#" class="ml-auto">By Jennifer
-                                            Wilson</a></div>
-                                    <div>
-                                        <p
-                                            class="mb-[24px] text-base font-semibold">Advanced
-                                            JavaScript</p><p
-                                            class="font-light text-[14px] text-[var(--grey-30)]">Take
-                                            your JavaScript skills to the next
-                                            level. Explore advanced concepts
-                                            like closures, prototypes,
-                                            asynchronous programming, and ES6
-                                            features. Build complex applications
-                                            with confidence.</p></div><a
-                                        href="#"
-                                        class="rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
-                                        it Now</a></div></li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- courses end -->
-            </main>
-            <!-- footer start -->
-            <footer class="bg-white pt-16 pb-8">
-                <div
-                    class="container flex flex-wrap px-4 gap-6 lg:gap-0  pb-7 footer__top">
-                    <div
-                        class="max-w-full flex-[1_1_100%] lg:max-w-[calc(100%/3)] ">
-                        <a href="/" class="mb-4 flex">
-                            <img src="./assets/Logo.svg"
-                                alt="Logo my awesome webiste  with tailwind">
-                        </a>
-                        <ul
-                            class="text-sm md:text-base contcts-footer flex flex-col gap-3">
-                            <li>
-                                <a
-                                    class="before:w-5 before:h-5 before:bg-[url(./assets/icons/mail.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
-                                    href="mailto:hello@tailwindtestgmail.com">hello@tailwindTest.com</a>
-                            </li>
-                            <li>
-                                <a
-                                    class="before:w-5 before:h-5 before:bg-[url(./assets/icons/phone.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
-                                    href="tel:+42744743737">+42 744 743
-                                    737</a>
-                            </li>
-                            <li>
-                                <a
-                                    class="before:w-5 before:h-5 before:bg-[url(./assets/icons/pin.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
-                                    href="#SomewhereintheWorld">Somewhere
-                                    in the
-                                    World</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div
-                        class="max-w-full flex-[1_1_100%] flex flex-wrap gap-6 lg:max-w-[calc(100%*2/3)] lg:flex-nowrap">
-                        <div
-                            class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)] ">
-                            <h6
-                                class="text-lg font-semibold mb-2">Home</h6>
-                            <ul
-                                class="text-sm md:text-base flex flex-col gap-2">
-                                <li><a class="text-[var(--grey-35)]"
-                                        href="#Benefits">Benefits</a></li>
-                                <li><a class="text-[var(--grey-35)]"
-                                        href="#OurCourses">Our
-                                        Courses</a></li>
-                                <li><a class="text-[var(--grey-35)]"
-                                        href="#OurTestimonials">Our
-                                        Testimonials</a></li>
-                                <li><a class="text-[var(--grey-35)]"
-                                        href="#OurFAQ">Our FAQ</a></li>
-                            </ul>
-                        </div>
-                        <div
-                            class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)]">
-                            <h6 class="text-lg font-semibold mb-2">About
-                                Us</h6>
-                            <ul
-                                class="text-sm md:text-base flex flex-col gap-2">
-                                <li><a class="text-[var(--grey-35)]"
-                                        href="#Company">Company</a></li>
-                                <li><a class="text-[var(--grey-35)]"
-                                        href="#Achievements">Achievements</a></li>
-                                <li><a class="text-[var(--grey-35)]"
-                                        href="#OurGoals">Our
-                                        Goals</a></li>
-                            </ul>
-                        </div>
-                        <div
-                            class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)]">
-                            <h6
-                                class="text-lg font-semibold mb-2">Social
-                                Profiles</h6>
-                            <ul class="flex gap-3.5">
-                                <li><a href="#face"
-                                        class="w-11 h-11 bg-[var(--white-95)] flex rounded-md bg-[url(./assets/social-icons/face.svg)] bg-no-repeat bg-size-auto bg-center"></a>
-                                </li>
-                                <li><a href="#twiter"
-                                        class="w-11 h-11 bg-[var(--white-95)] flex rounded-md bg-[url(./assets/social-icons/twiter.svg)] bg-no-repeat bg-size-auto bg-center"></a>
-                                </li>
-                                <li><a href="#linkedin"
-                                        class="w-11 h-11 bg-[var(--white-95)] flex rounded-md bg-[url(./assets/social-icons/linkedin.svg)] bg-no-repeat bg-size-auto bg-center"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="container px-4 footer__bottom ">
-                    <p
-                        class="text-lg text-center text-[var(--grey-40)] pt-7 border-t border-[var(--white-95)]">
-                        © 2023
-                        Skillbridge. All rights reserved.</p>
-                </div>
-            </footer>
-            <!-- footer end -->
-        </div>
-        <script src="src/script.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            </section>
+            <!-- partners end -->
 
-    </body>
+            <!-- video start -->
+            <section id="video">
+                <div class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
+                    <div
+                        class="video rounded-xl overflow-hidden flex relative before:absolute before:w-[100%] before:bg-[#00000020] before:h-[100%]">
+                        <img src="./assets/video/video.png" class=" 2xl:w-[100%]" alt="Video place holder maybe"
+                            loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <!-- video end -->
+
+            <!-- benefits start -->
+            <section id="benefits">
+                <div class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
+                    <h2 class="text-[28px] font-semibold leading-[1.5] md:text-[38px]">Benefits</h2>
+                    <div class="flex flex-wrap gap-5 mb-[60px]">
+                        <p class="text-[var(--grey-35)] max-w-[933px]">Lorem
+                            ipsum dolor
+                            sit amet consectetur. Tempus
+                            tincidunt etiam eget elit id imperdiet et. Cras
+                            eu sit dignissim lorem nibh et. Ac cum eget
+                            habitasse in velit fringilla feugiat senectus
+                            in.</p>
+                        <a href="#viewAll"
+                            class="rounded-md text-sm py-3.5 px-5 bg-white border font-medium border-[var(--white-95)] xl:ml-auto">View
+                            All</a>
+                    </div>
+                    <ul class="flex flex-wrap gap-[20px]">
+                        <li
+                            class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
+                            <div class="flex-[1_1_100%]">
+                                <p
+                                    class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">
+                                    01</p>
+                                <p class="text-[20px] font-semibold mb-2">Flexible
+                                    Learning Schedule</p>
+                                <p class="mb-8 lg:mb-10 text-[var(--grey-30)]">Fit
+                                    your coursework
+                                    around your existing
+                                    commitments and obligations.</p>
+                            </div>
+                            <span class="
+                                        max-w-[100%]
+                                        w-[54px] flex h-[54px]
+                                        bg-[var(--white-97)] border
+                                        border-[var(--white-95)] rounded-md
+                                        ml-auto justify-center min-h-[54px]"><img class="max-w-[13px]"
+                                    src="./assets/arrows/arrow.svg" alt="Arrow"></span>
+                        </li>
+                        <li
+                            class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
+                            <div class="flex-[1_1_100%]">
+                                <p
+                                    class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">
+                                    02</p>
+                                <p class="text-[20px] font-semibold mb-2">Expert
+                                    Instruction</p>
+                                <p class="mb-8 lg:mb-10 text-[var(--grey-30)]">Learn
+                                    from industry experts who have hands-on
+                                    experience in design and
+                                    development.</p>
+                            </div>
+                            <span class="
+                                        max-w-[100%]
+                                        w-[54px] flex h-[54px]
+                                        bg-[var(--white-97)] border
+                                        border-[var(--white-95)] rounded-md
+                                        ml-auto justify-center min-h-[54px]"><img class="max-w-[13px]"
+                                    src="./assets/arrows/arrow.svg" alt="Arrow"></span>
+                        </li>
+                        <li
+                            class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
+                            <div class="flex-[1_1_100%]">
+                                <p
+                                    class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">
+                                    03</p>
+                                <p class="text-[20px] font-semibold mb-2">Diverse
+                                    Course Offerings</p>
+                                <p class="mb-8 lg:mb-10 text-[var(--grey-30)]">Explore
+                                    a wide range of design and development
+                                    courses covering various topics.</p>
+                            </div>
+                            <span class="
+                                        max-w-[100%]
+                                        w-[54px] flex h-[54px]
+                                        bg-[var(--white-97)] border
+                                        border-[var(--white-95)] rounded-md
+                                        ml-auto justify-center min-h-[54px]"><img class="max-w-[13px]"
+                                    src="./assets/arrows/arrow.svg" alt="Arrow"></span>
+                        </li>
+                        <li
+                            class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
+                            <div class="flex-[1_1_100%]">
+                                <p
+                                    class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">
+                                    04</p>
+                                <p class="text-[20px] font-semibold mb-2">Updated
+                                    Curriculum</p>
+                                <p class="mb-8 lg:mb-10 text-[var(--grey-30)]">Access
+                                    courses with up-to-date content
+                                    reflecting
+                                    the latest trends and industry
+                                    practices.</p>
+                            </div>
+                            <span class="
+                                        max-w-[100%]
+                                        w-[54px] flex h-[54px]
+                                        bg-[var(--white-97)] border
+                                        border-[var(--white-95)] rounded-md
+                                        ml-auto justify-center min-h-[54px]"><img class="max-w-[13px]"
+                                    src="./assets/arrows/arrow.svg" alt="Arrow"></span>
+                        </li>
+                        <li
+                            class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
+                            <div class="flex-[1_1_100%]">
+
+                                <p
+                                    class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">
+                                    05</p>
+                                <p class="text-[20px] font-semibold mb-2">Practical
+                                    Projects and Assignments</p>
+                                <p class="mb-8 lg:mb-10 text-[var(--grey-30)]">Develop
+                                    a portfolio showcasing your skills
+                                    and
+                                    abilities to potential
+                                    employers.</p>
+                            </div>
+                            <span class="
+                                        max-w-[100%]
+                                        w-[54px] flex h-[54px]
+                                        bg-[var(--white-97)] border
+                                        border-[var(--white-95)] rounded-md
+                                        ml-auto justify-center min-h-[54px]"><img class="max-w-[13px]"
+                                    src="./assets/arrows/arrow.svg" alt="Arrow"></span>
+                        </li>
+                        <li
+                            class="flex-[1_1_100%] sm:max-w-[calc((100%/2)-15px)] xl:max-w-[calc((100%/3)-15px)] bg-white p-8  xl:p-12 rounded-xl flex flex-col">
+                            <div class="flex-[1_1_100%]">
+                                <p
+                                    class="count text-[50px] font-bold md:text-[60px] text-end mb-7 lg:mb-12 leading-[1]">
+                                    06</p>
+                                <p class="text-[20px] font-semibold mb-2">Interactive
+                                    Learning Environment</p>
+                                <p class="mb-8 lg:mb-10 text-[var(--grey-30)]">Collaborate
+                                    with fellow learners, exchanging
+                                    ideas
+                                    and
+                                    feedback to enhance your
+                                    understanding.</p>
+                            </div>
+                            <span class="
+                                        max-w-[100%]
+                                        w-[54px] flex h-[54px]
+                                        bg-[var(--white-97)] border
+                                        border-[var(--white-95)] rounded-md
+                                        ml-auto justify-center min-h-[54px]"><img class="max-w-[13px]"
+                                    src="./assets/arrows/arrow.svg" alt="Arrow"></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- benefits end -->
+
+            <!-- courses start -->
+            <section id="courses">
+                <div class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
+                    <h2 class="text-[28px] font-semibold leading-[1.5] md:text-[38px]">Our
+                        Courses</h2>
+                    <div class="flex flex-wrap gap-5 mb-[60px]">
+                        <p class="text-[var(--grey-35)] max-w-[933px]">Lorem
+                            ipsum dolor sit amet consectetur. Tempus
+                            tincidunt etiam eget elit id imperdiet et. Cras
+                            eu sit dignissim lorem nibh et. Ac cum eget
+                            habitasse in velit fringilla feugiat senectus
+                            in.</p>
+                        <a href="#viewAll"
+                            class="rounded-md text-sm py-3.5 px-5 bg-white border font-medium border-[var(--white-95)] xl:ml-auto">View
+                            All</a>
+                    </div>
+                    <ul class="flex flex-wrap gap-[20px]">
+                        <li class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
+                            <a href="#" class="pb-6 md:pb-7 flex"><img src="./assets/courses/ByJohnSmith.png"
+                                    alt="By John Smith"></a>
+                            <div class="course-contnet flex flex-col gap-[24px]">
+                                <div class="flex gap-4 flex-wrap items-center">
+                                    <ul class="flex gap-3">
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">4
+                                                weeks</a></li>
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Beginner</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class=" lg:ml-auto">By John
+                                        Smith</a>
+                                </div>
+                                <div>
+                                    <p class="mb-[24px] text-base font-semibold">Web
+                                        Design Fundamentals</p>
+                                    <p class="font-light text-[14px] text-[var(--grey-30)]">Learn
+                                        the
+                                        fundamentals of web design,
+                                        including HTML, CSS, and responsive
+                                        design principles. Develop the
+                                        skills to create visually appealing
+                                        and user-friendly
+                                        websites.</p>
+                                </div><a href="#"
+                                    class="duration-300  hover:bg-[var(--orange-70)] hover:text-white rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
+                                    it Now</a>
+                            </div>
+                        </li>
+                        <li class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
+                            <a href="#" class="pb-6 md:pb-7 flex"><img src="./assets/courses/ByEmilyJohnson.png"
+                                    alt="By Emily Johnson"></a>
+                            <div class="course-contnet flex flex-col gap-[24px]">
+                                <div class="flex gap-4 flex-wrap items-center">
+                                    <ul class="flex gap-3">
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">6
+                                                weeks</a></li>
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Intermediate</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="md: lg:ml-auto">By
+                                        Emily
+                                        Johnson</a>
+                                </div>
+                                <div>
+                                    <p class="mb-[24px] text-base font-semibold">UI/UX
+                                        Design</p>
+                                    <p class="font-light text-[14px] text-[var(--grey-30)]">Master
+                                        the art of creating intuitive user
+                                        interfaces (UI) and enhancing user
+                                        experiences (UX). Learn design
+                                        principles, wireframing,
+                                        prototyping, and usability testing
+                                        techniques.</p>
+                                </div><a href="#"
+                                    class="duration-300  hover:bg-[var(--orange-70)] hover:text-white rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
+                                    it Now</a>
+                            </div>
+                        </li>
+                        <li class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
+                            <a href="#" class="pb-6 md:pb-7 flex"><img src="./assets/courses/ByDavidBrown.png"
+                                    alt="By David Brown"></a>
+                            <div class="course-contnet flex flex-col gap-[24px]">
+                                <div class="flex gap-4 flex-wrap items-center">
+                                    <ul class="flex gap-3">
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">8
+                                                weeks</a></li>
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Intermediate</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class=" lg:ml-auto">By David
+                                        Brown</a>
+                                </div>
+                                <div>
+                                    <p class="mb-[24px] text-base font-semibold">Mobile
+                                        App Development</p>
+                                    <p class="font-light text-[14px] text-[var(--grey-30)]">Dive
+                                        into the world of mobile app
+                                        development. Learn to build native
+                                        iOS and Android applications using
+                                        industry-leading frameworks like
+                                        Swift and Kotlin.</p>
+                                </div><a href="#"
+                                    class="duration-300  hover:bg-[var(--orange-70)] hover:text-white rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
+                                    it Now</a>
+                            </div>
+                        </li>
+                        <li class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
+                            <a href="#" class="pb-6 md:pb-7 flex"><img src="./assets/courses/BySarahThompson.png"
+                                    alt="By Sarah Thompson"></a>
+                            <div class="course-contnet flex flex-col gap-[24px]">
+                                <div class="flex gap-4 flex-wrap items-center">
+                                    <ul class="flex gap-3">
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">10
+                                                weeks</a></li>
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Beginner</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class=" lg:ml-auto">By Sarah
+                                        Thompson</a>
+                                </div>
+                                <div>
+                                    <p class="mb-[24px] text-base font-semibold">Graphic
+                                        Design for Beginners</p>
+                                    <p class="font-light text-[14px] text-[var(--grey-30)]">Discover
+                                        the fundamentals of graphic design,
+                                        including typography, color theory,
+                                        layout design, and image
+                                        manipulation techniques. Create
+                                        visually stunning designs for print
+                                        and digital media.</p>
+                                </div><a href="#"
+                                    class="duration-300  hover:bg-[var(--orange-70)] hover:text-white rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
+                                    it Now</a>
+                            </div>
+                        </li>
+                        <li class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
+                            <a href="#" class="pb-6 md:pb-7 flex"><img src="./assets/courses/ByMichaelAdams.png"
+                                    alt="By Michael Adams"></a>
+                            <div class="course-contnet flex flex-col gap-[24px]">
+                                <div class="flex gap-4 flex-wrap items-center">
+                                    <ul class="flex gap-3">
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">10
+                                                weeks</a></li>
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Intermediate</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class=" lg:ml-auto">By Michael Adams</a>
+                                </div>
+                                <div>
+                                    <p class="mb-[24px] text-base font-semibold">Web
+                                        Design Fundamentals</p>
+                                    <p class="font-light text-[14px] text-[var(--grey-30)]">Learn
+                                        the
+                                        fundamentals of web design,
+                                        including HTML, CSS, and responsive
+                                        design principles. Develop the
+                                        skills to create visually appealing
+                                        and user-friendly
+                                        websites.</p>
+                                </div><a href="#"
+                                    class="duration-300  hover:bg-[var(--orange-70)] hover:text-white rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
+                                    it Now</a>
+                            </div>
+                        </li>
+                        <li class="rounded-lg p-6 lg:p-[40px] flex[1_1_100%] sm:max-w-[calc((100%/2)-15px)] bg-white">
+                            <a href="#" class="pb-6 md:pb-7 flex"><img src="./assets/courses/ByJenniferWilson.png"
+                                    alt="By Jennifer Wilson"></a>
+                            <div class="course-contnet flex flex-col gap-[24px]">
+                                <div class="flex gap-4 flex-wrap items-center">
+                                    <ul class="flex gap-3">
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">6
+                                                weeks</a></li>
+                                        <li><a href="#"
+                                                class="rounded-md text-[var(--grey-30)] border border-[var(--white-95) px-4 py-2 text-sm] inline-flex">Advance</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class=" lg:ml-auto">By
+                                        Jennifer
+                                        Wilson</a>
+                                </div>
+                                <div>
+                                    <p class="mb-[24px] text-base font-semibold">Advanced
+                                        JavaScript</p>
+                                    <p class="font-light text-[14px] text-[var(--grey-30)]">Take
+                                        your JavaScript skills to the next
+                                        level. Explore advanced concepts
+                                        like closures, prototypes,
+                                        asynchronous programming, and ES6
+                                        features. Build complex applications
+                                        with confidence.</p>
+                                </div><a href="#"
+                                    class="duration-300  hover:bg-[var(--orange-70)] hover:text-white rounded-md text-sm py-3.5 px-5 bg-[var(--white-97)] border font-medium border-[var(--white-95)] flex items-center justify-center">Get
+                                    it Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- courses end -->
+        </main>
+        <!-- footer start -->
+        <footer class="bg-white pt-16 pb-8">
+            <div class="container flex flex-wrap px-4 gap-6 lg:gap-0  pb-7 footer__top">
+                <div class="max-w-full flex-[1_1_100%] lg:max-w-[calc(100%/3)] ">
+                    <a href="/" class="mb-4 flex">
+                        <img src="./assets/Logo.svg" alt="Logo my awesome webiste  with tailwind">
+                    </a>
+                    <ul class="text-sm md:text-base contcts-footer flex flex-col gap-3">
+                        <li>
+                            <a class="before:w-5 before:h-5 before:bg-[url(./assets/icons/mail.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
+                                href="mailto:hello@tailwindtestgmail.com">hello@tailwindTest.com</a>
+                        </li>
+                        <li>
+                            <a class="before:w-5 before:h-5 before:bg-[url(./assets/icons/phone.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
+                                href="tel:+42744743737">+42 744 743
+                                737</a>
+                        </li>
+                        <li>
+                            <a class="before:w-5 before:h-5 before:bg-[url(./assets/icons/pin.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:flex flex gap-2 items-center"
+                                href="#SomewhereintheWorld">Somewhere
+                                in the
+                                World</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-w-full flex-[1_1_100%] flex flex-wrap gap-6 lg:max-w-[calc(100%*2/3)] lg:flex-nowrap">
+                    <div class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)] ">
+                        <h6 class="text-lg font-semibold mb-2">Home</h6>
+                        <ul class="text-sm md:text-base flex flex-col gap-2">
+                            <li><a class="text-[var(--grey-35)]" href="#Benefits">Benefits</a></li>
+                            <li><a class="text-[var(--grey-35)]" href="#OurCourses">Our
+                                    Courses</a></li>
+                            <li><a class="text-[var(--grey-35)]" href="#OurTestimonials">Our
+                                    Testimonials</a></li>
+                            <li><a class="text-[var(--grey-35)]" href="#OurFAQ">Our FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)]">
+                        <h6 class="text-lg font-semibold mb-2">About
+                            Us</h6>
+                        <ul class="text-sm md:text-base flex flex-col gap-2">
+                            <li><a class="text-[var(--grey-35)]" href="#Company">Company</a></li>
+                            <li><a class="text-[var(--grey-35)]" href="#Achievements">Achievements</a></li>
+                            <li><a class="text-[var(--grey-35)]" href="#OurGoals">Our
+                                    Goals</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-[1_1_100%] max-w-[calc((100%/2)-12px)] lg:max-w-[calc(100%/3)]">
+                        <h6 class="text-lg font-semibold mb-2">Social
+                            Profiles</h6>
+                        <ul class="flex gap-3.5">
+                            <li><a href="#face"
+                                    class="w-11 h-11 bg-[var(--white-95)] flex rounded-md bg-[url(./assets/social-icons/face.svg)] bg-no-repeat bg-size-auto bg-center"></a>
+                            </li>
+                            <li><a href="#twiter"
+                                    class="w-11 h-11 bg-[var(--white-95)] flex rounded-md bg-[url(./assets/social-icons/twiter.svg)] bg-no-repeat bg-size-auto bg-center"></a>
+                            </li>
+                            <li><a href="#linkedin"
+                                    class="w-11 h-11 bg-[var(--white-95)] flex rounded-md bg-[url(./assets/social-icons/linkedin.svg)] bg-no-repeat bg-size-auto bg-center"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container px-4 footer__bottom ">
+                <p class="text-lg text-center text-[var(--grey-40)] pt-7 border-t border-[var(--white-95)]">
+                    © 2023
+                    Skillbridge. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <script src="src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
 
 </html>
