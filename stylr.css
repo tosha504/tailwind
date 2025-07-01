@@ -134,3 +134,17 @@ nav.active {
   background: #fff;
   color: var(--grey-40);
 }
+
+/* faq */
+.faq-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+}
+
+/* opened state – large enough that even long answers fit */
+.faq-item.open .answer {
+  max-height: 1000px; /* tweak if you have *very* long answers */
+  opacity: 1;
+}

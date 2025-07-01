@@ -699,6 +699,102 @@
             </section>
             <!-- pricing start -->
 
+            <!-- faq start -->
+            <section id="faq">
+                <div class="container m-auto px-4 pt-[15px] pb-[15px] lg:pt-[50px] lg:pb-[50px]">
+                    <div
+                        class=" bg-white rounded-lg p-6 lg:p-[100px] flex flex-wrap lg:flex-nowrap gap-[40px] lg:gap-[120px]">
+                        <div class="flex-[1_1_100%] lg:max-w-[30%]">
+                            <h3 class="text-[28px] font-semibold leading-[1.5] md:text-[38px]">Frequently Asked
+                                Questions</h3>
+                            <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
+                            <a href="#">See All FAQ’s</a>
+                        </div>
+                        <div class="flex-[1_1_100%] lg:max-w-[60%]">
+                            <ul class="flex flex-col gap5 lg:gap-7">
+                                <li class="faq-item rounded-xl border boredr-[var(--white-95)] p-6 lg:p-14">
+                                    <div class="question flex items-center  hover:cursor-pointer bg-red-400">
+                                        <p class="font-medium lg:text-xl mr-auto">Can I enroll in multiple courses at
+                                            once?</p>
+                                        <button aria-label="Toggle Accordion Content"
+                                            class="max-w-[52px] w-[100%] h-[52px] bg-[var(--orange-95)] rounded-lg before:bg-[url(./assets/faq/plus.svg)] before:h-[100%] before:block before:w-[100%] before:bg-center before:bg-no-repeat"></button>
+                                    </div>
+                                    <div class="answer pt-5 lg:pt-12">
+                                        <p class="text-sm lg:text-lg text-[var(--grey-30)] mb-5 lg:mb-12">Absolutely!
+                                            You can enroll
+                                            in multiple courses simultaneously and access them
+                                            at your convenience.</p>
+                                        <a href="#somelink"
+                                            class="py-3 px-5 lg:7 flex gap-5 bg-[var(--white-97)] border border-[var(--white-95)] rounded-md text-[var(--grey-30)] font-medium items-center">
+                                            <p class="mr-auto">Enrollment Process for Different
+                                                Courses</p>
+                                            <button
+                                                class="max-w-[40px] w-[100%] h-[40px] bg-white rounded-full bg-[url(./assets/faq/arr.svg)] bg-center bg-no-repeat"></button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="faq-item rounded-xl border boredr-[var(--white-95)] p-6 lg:p-14">
+                                    <div class="question flex items-center  hover:cursor-pointer bg-red-400">
+                                        <p class="font-medium lg:text-xl mr-auto">Can I enroll in multiple courses at
+                                            once?</p>
+                                        <button aria-label="Toggle Accordion Content"
+                                            class="max-w-[52px] w-[100%] h-[52px] bg-[var(--orange-95)] rounded-lg before:bg-[url(./assets/faq/plus.svg)] before:h-[100%] before:block before:w-[100%] before:bg-center before:bg-no-repeat"></button>
+                                    </div>
+                                    <div class="answer pt-5 lg:pt-12">
+                                        <p class="text-sm lg:text-lg text-[var(--grey-30)] mb-5 lg:mb-12">Absolutely!
+                                            You can enroll
+                                            in multiple courses simultaneously and access them
+                                            at your convenience.</p>
+                                        <a href="#somelink"
+                                            class="py-3 px-5 lg:7 flex gap-5 bg-[var(--white-97)] border border-[var(--white-95)] rounded-md text-[var(--grey-30)] font-medium items-center">
+                                            <p class="mr-auto">Enrollment Process for Different
+                                                Courses</p>
+                                            <button
+                                                class="max-w-[40px] w-[100%] h-[40px] bg-white rounded-full bg-[url(./assets/faq/arr.svg)] bg-center bg-no-repeat"></button>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- faq end -->
+            <script>
+                (function () {
+                    const items = document.querySelectorAll('.faq-item');
+                    let current = null;                                      // tracks the open item
+
+                    items.forEach(item => {
+                        const question = item.querySelector('.question');
+
+                        // guard – if someone removed .question in HTML, skip
+                        if (!question) return;
+
+                        question.addEventListener('click', () => {
+                            const isOpen = item.classList.contains('open');
+
+                            // 1) close the one that is currently open (if it’s not the same)
+                            if (current && current !== item) {
+                                current.classList.remove('open');
+                            }
+
+                            // 2) toggle the clicked item
+                            item.classList.toggle('open', !isOpen);
+
+                            // 3) update tracker
+                            current = (!isOpen) ? item : null;
+                        });
+                    });
+
+                    /* optional – ensure everything starts closed on load */
+                    window.addEventListener('DOMContentLoaded', () => {
+                        items.forEach(item => item.classList.remove('open'));
+                        current = null;
+                    });
+                })();
+            </script>
+
         </main>
         <!-- footer start -->
         <footer class="bg-white pt-16 pb-8">
