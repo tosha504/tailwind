@@ -33,4 +33,37 @@ window.addEventListener("load", (event) => {
     simulateTouch: false,
   });
   console.log("page is fully loaded");
+
+  const switcher = document.getElementById('switcher');
+  const buttons = Array.from(switcher.querySelectorAll('a'));
+  const priceSpans = document.querySelectorAll('.price');
+  const periodSpans = document.querySelectorAll('.period');   // ✱ new
+  const periodText = { monthly: 'month', yearly: 'year' };   // ✱ new
+
+  const applyInterval = (interval) => {
+    /* highlight the active button */
+    buttons.forEach(btn =>
+      btn.classList.toggle('active', btn.dataset.interval === interval)
+    );
+
+    /* update every price */
+    priceSpans.forEach(span => {
+      span.textContent = `$${span.dataset[interval]}`;
+    });
+
+    /* update every “/month | /year” */
+    periodSpans.forEach(span => {
+      span.textContent = `/${periodText[interval]}`;
+    });
+  };
+
+  /* initialise buttons */
+  buttons.forEach(btn => {
+    btn.dataset.interval = btn.textContent.trim().toLowerCase();
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      applyInterval(btn.dataset.interval);
+    });
+  });
+
 });
