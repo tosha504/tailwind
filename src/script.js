@@ -66,4 +66,34 @@ window.addEventListener("load", (event) => {
     });
   });
 
+  const items = document.querySelectorAll('.faq-item');
+  let current = null;                                      // tracks the open item
+
+  items.forEach(item => {
+    const question = item.querySelector('.question');
+
+    // guard – if someone removed .question in HTML, skip
+    if (!question) return;
+
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      // 1) close the one that is currently open (if it’s not the same)
+      if (current && current !== item) {
+        current.classList.remove('open');
+      }
+
+      // 2) toggle the clicked item
+      item.classList.toggle('open', !isOpen);
+
+      // 3) update tracker
+      current = (!isOpen) ? item : null;
+    });
+  });
+
+  /* optional – ensure everything starts closed on load */
+  window.addEventListener('DOMContentLoaded', () => {
+    items.forEach(item => item.classList.remove('open'));
+    current = null;
+  });
 });

@@ -148,3 +148,17 @@ nav.active {
   max-height: 1000px; /* tweak if you have *very* long answers */
   opacity: 1;
 }
+.faq-item.open .question {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--white-95);
+}
+
+.faq-item.open .answer {
+  padding: 20px 0 0;
+}
+
+@media (min-width: 1024px) {
+  .faq-item.open .answer {
+    padding: 50px 0 0;
+  }
+}
